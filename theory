@@ -1,0 +1,98 @@
+1️⃣ Selection Sort (Greedy Approach)
+Selection sort is considered greedy because it selects the minimum element at each step and places it in the correct position.
+
+⚙️ How it Works
+Start from first element.
+Find the smallest element in the remaining array.
+Swap it with current position.
+Move to next position and repeat.
+💡 Key Point
+Always picks locally smallest element → greedy choice.
+Time Complexity: O(n²)
+
+2️⃣ Minimum Spanning Tree (MST)
+An MST is a subset of edges in a graph that:
+Connects all vertices
+Has minimum total weight
+Contains no cycles
+
+⚙️ How it Works
+Start with empty tree
+Add edges with minimum weight
+Avoid cycles
+Continue until all vertices are connected
+
+
+💡 Key Point
+Greedy because we always pick the smallest edge
+
+3️⃣ Single Source Shortest Path (SSSP)
+Find the shortest path from one source node to all other nodes in a graph.
+
+⚙️ How it Works (General)
+Start from source node
+Assign distance = 0 to source, ∞ to others
+Update distances by choosing minimum cost paths
+Repeat until all nodes are covered
+
+💡 Key Point
+Greedy when using Dijkstra’s algorithm
+
+4️⃣ Job Scheduling Problem
+Given jobs with:
+Deadlines
+Profits
+
+Goal: Maximize total profit by scheduling jobs.
+
+⚙️ How it Works
+Sort jobs by profit (descending)
+Pick highest profit job first
+Assign it to latest possible free slot before deadline
+Repeat for remaining jobs
+
+💡 Key Point
+Always picks highest profit job first
+
+5️⃣ Prim’s Algorithm (MST)
+Builds MST by growing a tree from a starting node.
+
+⚙️ How it Works
+Start from any node
+Select the minimum weight edge connecting tree to new vertex
+Add that vertex to tree
+Repeat until all vertices are included
+
+💡 Key Point
+Works like expanding tree step-by-step
+Uses priority queue
+
+6️⃣ Kruskal’s Algorithm (MST)
+Builds MST by selecting edges in increasing order of weight.
+
+⚙️ How it Works
+Sort all edges by weight
+Pick smallest edge
+Check if it forms a cycle
+If NO → add to MST
+If YES → skip
+Repeat until MST is complete
+
+💡 Key Point
+Uses Disjoint Set (Union-Find)
+
+7️⃣ Dijkstra’s Algorithm (Shortest Path)
+Finds shortest path from source to all vertices in weighted graph (no negative weights).
+
+⚙️ How it Works
+Initialize distances:
+Source = 0
+Others = ∞
+Pick node with minimum distance
+Update neighbors (relaxation)
+Mark node as visited
+Repeat
+
+💡 Key Point
+Always chooses nearest unvisited node
+Greedy because it locks shortest path step-by-step
