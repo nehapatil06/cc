@@ -1,0 +1,64 @@
+public class StockTrading {
+    public static void tradeStock() {
+        String stockName = 'TCS';
+        Integer quantity = 10;
+        Double price = 3500.50;
+        
+        Double total = quantity * price;
+        
+        System.debug('Stock: ' + stockName);
+        System.debug('Quantity: ' + quantity);
+        System.debug('Price: ' + price);
+        System.debug('Total Amount: ' + total);
+    }
+}
+
+
+
+
+public class InfoManagement {
+    public static void manageInfo() {
+        String name = 'Neha';
+        String department = 'IT';
+        Integer age = 21;
+        
+        System.debug('Name: ' + name);
+        System.debug('Department: ' + department);
+        System.debug('Age: ' + age);
+    }
+}
+
+
+public class EmployeePerformance {
+    public static void evaluate() {
+        String empName = 'Rahul';
+        Integer score = 85;
+        String rating;
+        
+        if(score >= 90) {
+            rating = 'Excellent';
+        } else if(score >= 75) {
+            rating = 'Good';
+        } else {
+            rating = 'Average';
+        }
+        
+        System.debug('Employee: ' + empName);
+        System.debug('Score: ' + score);
+        System.debug('Rating: ' + rating);
+    }
+}
+
+
+
+public class HospitalSystem {
+    public static void patientDetails() {
+        String patientName = 'Amit';
+        Integer age = 30;
+        String disease = 'Fever';
+        
+        System.debug('Patient Name: ' + patientName);
+        System.debug('Age: ' + age);
+        System.debug('Disease: ' + disease);
+    }
+}
